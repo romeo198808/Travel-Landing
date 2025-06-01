@@ -4444,7 +4444,7 @@ function initSliders() {
       // simulateTouch: false,
       // loop: true,
       preloadImages: false,
-      lazy: true,
+      // lazy: true,
       /*
       // Ефекти
       effect: 'fade',
