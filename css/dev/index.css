@@ -395,7 +395,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 76.05%, rgba(0, 0, 0, 0.4) 100%), url("../assets/img/back-1.webp");
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 76.05%, rgba(0, 0, 0, 0.4) 100%), url("../assets/img/back1.webp");
   background-repeat: no-repeat;
   background-position-x: center, -17.5rem;
   background-position-y: center, 7.8125rem;
