@@ -4489,6 +4489,70 @@ function initSliders() {
       // Події
       on: {}
     });
+    new Swiper(".reviews__slider", {
+      // <- Вказуємо склас потрібного слайдера
+      // Підключаємо модулі слайдера
+      // для конкретного випадку
+      modules: [Navigation],
+      observer: true,
+      observeParents: true,
+      slidesPerView: 1.55,
+      spaceBetween: 24,
+      centeredSlides: true,
+      initialSlide: 1,
+      autoHeight: true,
+      speed: 800,
+      //touchRatio: 0,
+      // simulateTouch: false,
+      // loop: true,
+      preloadImages: false,
+      // lazy: true,
+      /*
+      // Ефекти
+      effect: 'fade',
+      autoplay: {
+      	delay: 3000,
+      	disableOnInteraction: false,
+      },
+      */
+      // Пагінація
+      /*
+      pagination: {
+      	el: '.swiper-pagination',
+      	clickable: true,
+      },
+      */
+      // Скроллбар
+      /*
+      scrollbar: {
+      	el: '.swiper-scrollbar',
+      	draggable: true,
+      },
+      */
+      // Кнопки "вліво/вправо"
+      navigation: {
+        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next"
+      },
+      // Брейкпоінти
+      breakpoints: {
+        640: {
+          slidesPerView: 1.7,
+          autoHeight: true
+        },
+        768: {
+          slidesPerView: 2
+        },
+        992: {
+          slidesPerView: 2.9
+        },
+        1440: {
+          slidesPerView: 3
+        }
+      },
+      // Події
+      on: {}
+    });
   }
 }
 document.querySelector("[data-fls-slider]") ? window.addEventListener("load", initSliders) : null;
