@@ -5,8 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Travel Landing</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1748882333792"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1748882333792">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1748966289438"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1748966289438">
 		<link rel="preload" as="style" href="./css/webfonts.min.css">
 		<link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="./css/webfonts.min.css">
 	</head>
@@ -58,7 +58,7 @@
 							</nav>
 						</div>
 						<!--
-<fetch url="@components/layout/menu/menu.js?v=1748882333792on">
+<fetch url="@components/layout/menu/menu.js?v=1748966289438on">
 <each loop='item in response'>
 </each>
 </fetch>
@@ -149,7 +149,11 @@
 										</div>
 									</div>
 									<div class="landscapes__slide swiper-slide">
-										<img src="assets/img/back-1.jpg" alt="Image">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/back1-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/back1-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/back1.webp">
+										</picture>
 										<div class="landscapes__slide-wrap">
 											<p class="landscapes__slide-title">Bergen</p>
 											<p class="landscapes__slide-desk">Norway</p>
@@ -331,16 +335,16 @@
 							</div>
 						</div>
 						<div class="reviews__start">
-							<div class="reviewx__inner">
+							<div class="reviews__inner reviews__inner--1">
 								<h3 class="reviews__subtitle">Ready to Explore Norway?</h3>
 								<p class="reviews__desk">
 									Start your journey today with expert planning, seamless booking, and unforgettable
           experiences.
 								</p>
 							</div>
-							<div class="reviews__inner">
-								<a data-fls-btnlink="" href="" class="btn__link btn__link--dark reviews__link">Learn more</a>
-								<a data-fls-btnlink="" href="" class="btn__link btn__link--dark reviews__link">Start Your Adventure</a>
+							<div class="reviews__inner reviews__inner--2">
+								<a data-fls-btnlink="" href="" class="btn__link btn__link--transparent reviews__link">Learn more</a>
+								<a data-fls-btnlink="" href="" class="btn__link btn__link--transparent reviews__link">Start Your Adventure</a>
 							</div>
 						</div>
 					</div>
