@@ -5,8 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Travel Landing</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1751472105408"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1751472105408">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1752082181065"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1752082181065">
 		<link rel="preload" as="style" href="./css/webfonts.min.css">
 		<link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="./css/webfonts.min.css">
 	</head>
@@ -19,7 +19,7 @@
 							<img src="./assets/img/logo.svg" alt="logo" width="111" height="32">
 						</a>
 						<div class="header__menu menu">
-							<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+							<button type="button" data-fls-menu="" class="menu__icon icon-menu" name="burger-menu">
 								<span></span>
 							</button>
 							<nav class="menu__body">
@@ -58,7 +58,7 @@
 							</nav>
 						</div>
 						<!--
-<fetch url="@components/layout/menu/menu.js?v=1751472105408on">
+<fetch url="@components/layout/menu/menu.js?v=1752082181065on">
 <each loop='item in response'>
 </each>
 </fetch>
@@ -69,7 +69,7 @@
 			<main class="page page--home">
 				<section data-fls-capital="" class="capital">
 					<div class="capital__container">
-						<div class="capital__wrap">
+						<div class="capital__wrap lazy-bg" data-src="assets/img/back1.jpg">
 							<div class="capital__inner">
 								<h2 class="capital__title">Discover Norway’s
           Breathtaking Beauty</h2>
@@ -116,44 +116,28 @@
 								<div class="landscapes__wrapper swiper-wrapper">
 									<!-- Слайд -->
 									<div class="landscapes__slide swiper-slide">
-										<picture>
-											<source media="(max-width: 600px)" srcset="./assets/img/slide-1-600.webp" type="image/webp">
-											<source media="(max-width: 1200px)" srcset="./assets/img/slide-1-1200.webp" type="image/webp">
-											<img alt="Image" src="./assets/img/slide-1.webp">
-										</picture>
+										<img src="./assets/img/slide-1-lazy.jpg" alt="Image" data-src="assets/img/slide-1.jpg" class="lazy-img">
 										<div class="landscapes__slide-wrap">
 											<p class="landscapes__slide-title">Oslo</p>
 											<p class="landscapes__slide-desk">Norway</p>
 										</div>
 									</div>
 									<div class="landscapes__slide swiper-slide">
-										<picture>
-											<source media="(max-width: 600px)" srcset="./assets/img/slide-2-600.webp" type="image/webp">
-											<source media="(max-width: 1200px)" srcset="./assets/img/slide-2-1200.webp" type="image/webp">
-											<img alt="Image" src="./assets/img/slide-2.webp">
-										</picture>
+										<img src="./assets/img/slide-2-lazy.jpg" alt="Image" data-src="assets/img/slide-2.jpg" class="lazy-img">
 										<div class="landscapes__slide-wrap">
 											<p class="landscapes__slide-title">Bergen</p>
 											<p class="landscapes__slide-desk">Norway</p>
 										</div>
 									</div>
 									<div class="landscapes__slide swiper-slide">
-										<picture>
-											<source media="(max-width: 600px)" srcset="./assets/img/slide-3-600.webp" type="image/webp">
-											<source media="(max-width: 1200px)" srcset="./assets/img/slide-3-1200.webp" type="image/webp">
-											<img alt="Image" src="./assets/img/slide-3.webp">
-										</picture>
+										<img src="./assets/img/slide-3-lazy.jpg" alt="Image" data-src="assets/img/slide-3.jpg" class="lazy-img">
 										<div class="landscapes__slide-wrap">
 											<p class="landscapes__slide-title">Tromsø</p>
 											<p class="landscapes__slide-desk">Norway</p>
 										</div>
 									</div>
 									<div class="landscapes__slide swiper-slide">
-										<picture>
-											<source media="(max-width: 600px)" srcset="./assets/img/back1-600.webp" type="image/webp">
-											<source media="(max-width: 1200px)" srcset="./assets/img/back1-1200.webp" type="image/webp">
-											<img alt="Image" src="./assets/img/back1.webp">
-										</picture>
+										<img src="./assets/img/back1-lazy.jpg" alt="Image" data-src="assets/img/back1.jpg" class="lazy-img">
 										<div class="landscapes__slide-wrap">
 											<p class="landscapes__slide-title">Bergen</p>
 											<p class="landscapes__slide-desk">Norway</p>
@@ -198,11 +182,7 @@
 							</div>
 							<div class="platform__wrap platform__wrap--2">
 								<div class="platform__img">
-									<picture>
-										<source media="(max-width: 600px)" srcset="./assets/img/platform-600.webp" type="image/webp">
-										<source media="(max-width: 1200px)" srcset="./assets/img/platform-1200.webp" type="image/webp">
-										<img alt="Our platform" src="./assets/img/platform.webp">
-									</picture>
+									<img src="./assets/img/platform-lazy.jpg" alt="Our platform" class="lazy-img" data-src="assets/img/platform.jpg">
 								</div>
 							</div>
 						</div>
@@ -223,11 +203,7 @@
 								<div class="plans__wrapper swiper-wrapper">
 									<!-- Слайд -->
 									<div class="plans__slide swiper-slide">
-										<picture>
-											<source media="(max-width: 600px)" srcset="./assets/img/plan-1-600.webp" type="image/webp">
-											<source media="(max-width: 1200px)" srcset="./assets/img/plan-1-1200.webp" type="image/webp">
-											<img alt="Image" src="./assets/img/plan-1.webp">
-										</picture>
+										<img src="./assets/img/plan-1-lazy.jpg" alt="Image" class="lazy-img" data-src="assets/img/plan-1.jpg">
 										<div class="plans__slide-wrap">
 											<p class="plans__slide-title">Fjordview Cabin Retreat</p>
 											<p class="plans__slide-desk">Geiranger, Norway</p>
@@ -241,11 +217,7 @@
 										</div>
 									</div>
 									<div class="plans__slide swiper-slide">
-										<picture>
-											<source media="(max-width: 600px)" srcset="./assets/img/plan-2-600.webp" type="image/webp">
-											<source media="(max-width: 1200px)" srcset="./assets/img/plan-2-1200.webp" type="image/webp">
-											<img alt="Image" src="./assets/img/plan-2.webp">
-										</picture>
+										<img src="./assets/img/plan-2-lazy.jpg" alt="Image" class="lazy-img" data-src="assets/img/plan-2.jpg">
 										<div class="plans__slide-wrap">
 											<p class="plans__slide-title">Northern Lights Lodge</p>
 											<p class="plans__slide-desk">Tromsø, Norway</p>
@@ -259,11 +231,7 @@
 										</div>
 									</div>
 									<div class="plans__slide swiper-slide">
-										<picture>
-											<source media="(max-width: 600px)" srcset="./assets/img/plan-3-600.webp" type="image/webp">
-											<source media="(max-width: 1200px)" srcset="./assets/img/plan-3-1200.webp" type="image/webp">
-											<img alt="Image" src="./assets/img/plan-3.webp">
-										</picture>
+										<img src="./assets/img/plan-3-lazy.jpg" alt="Image" class="lazy-img" data-src="assets/img/plan-3.jpg">
 										<div class="plans__slide-wrap">
 											<p class="plans__slide-title">Oslo Forest Hideaway</p>
 											<p class="plans__slide-desk">Oslo, Norway</p>

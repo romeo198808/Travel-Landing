@@ -537,21 +537,16 @@ body {
 .capital__wrap {
   position: relative;
   z-index: 20;
-  overflow: hidden;
-  border-radius: 1.25rem;
-}
-.capital__wrap::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 76.05%, rgba(0, 0, 0, 0.4) 100%), url("../assets/img/back1.webp");
+  overflow: hidden;
+  background-color: #4f4f53;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 80%, rgba(0, 0, 0, 0.4) 100%);
+  background-image: url("../assets/img/back1-lazy.webp");
   background-repeat: no-repeat;
-  background-position-x: center, -17.5rem;
-  background-position-y: center, 7.8125rem;
+  background-position-x: center;
+  background-position-y: center;
   background-size: cover;
-  transform: scale(1.7);
+  border-radius: 1.25rem;
 }
 
 .capital__inner {
@@ -676,6 +671,9 @@ body {
   .header__logo {
     padding-right: 2.5rem;
   }
+  .footer__container {
+    margin-bottom: 1.25rem;
+  }
   .footer__wrap {
     padding-bottom: 1.25rem;
   }
@@ -776,12 +774,9 @@ body {
     font-size: 1.125rem;
   }
   .capital__container {
-    padding-top: 1.25rem;
+    margin-top: 1.25rem;
   }
   .capital__wrap {
-    height: 48.25rem;
-  }
-  .capital__wrap::after {
     height: 48.25rem;
   }
   .capital__inner {
@@ -865,6 +860,9 @@ body {
   }
   .header__logo {
     padding-right: clamp( 6.25e-8rem , -0.88028160563125rem  +  3.7558684507vw , 2.5rem );
+  }
+  .footer__container {
+    margin-bottom: clamp( 1rem , 0.9119718309875rem  +  0.3755868545vw , 1.25rem );
   }
   .footer__wrap {
     padding-bottom: clamp( 1rem , 0.9119718309875rem  +  0.3755868545vw , 1.25rem );
@@ -966,12 +964,9 @@ body {
     font-size: clamp( 0.875rem , 0.7869718309875rem  +  0.3755868545vw , 1.125rem );
   }
   .capital__container {
-    padding-top: clamp( 1rem , 0.9119718309875rem  +  0.3755868545vw , 1.25rem );
+    margin-top: clamp( 1rem , 0.9119718309875rem  +  0.3755868545vw , 1.25rem );
   }
   .capital__wrap {
-    height: clamp( 41.375rem , 38.9542253521125rem  +  10.3286384977vw , 48.25rem );
-  }
-  .capital__wrap::after {
     height: clamp( 41.375rem , 38.9542253521125rem  +  10.3286384977vw , 48.25rem );
   }
   .capital__inner {
@@ -1055,6 +1050,9 @@ body {
   }
   .header__logo {
     padding-right: 6.25e-8rem;
+  }
+  .footer__container {
+    margin-bottom: 1rem;
   }
   .footer__wrap {
     padding-bottom: 1rem;
@@ -1156,12 +1154,9 @@ body {
     font-size: 0.875rem;
   }
   .capital__container {
-    padding-top: 1rem;
+    margin-top: 1rem;
   }
   .capital__wrap {
-    height: 41.375rem;
-  }
-  .capital__wrap::after {
     height: 41.375rem;
   }
   .capital__inner {

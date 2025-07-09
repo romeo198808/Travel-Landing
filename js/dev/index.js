@@ -4604,3 +4604,23 @@ function menuInit() {
   });
 }
 document.querySelector("[data-fls-menu]") ? window.addEventListener("load", menuInit) : null;
+const lazyBgAll = document.querySelectorAll(".lazy-bg");
+const lazyImgAll = document.querySelectorAll(".lazy-img");
+window.addEventListener("load", function(evt) {
+  lazyBgAll.forEach((img) => {
+    const newImage = new Image();
+    newImage.onload = function() {
+      img.classList.remove("lazy-bg");
+      img.style.backgroundImage = `url('${img.dataset.src}')`;
+    };
+    newImage.src = img.dataset.src;
+  });
+  lazyImgAll.forEach((img) => {
+    const newImage = new Image();
+    newImage.addEventListener("load", function(evt2) {
+      img.classList.remove("lazy-img");
+      img.src = img.dataset.src;
+    });
+    newImage.src = img.dataset.src;
+  });
+});
